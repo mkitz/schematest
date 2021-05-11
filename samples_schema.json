@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "/v1/yisrschema.json",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "If editing an existing item, id is required, if a new item, you may omit this field.",
+        "type": "integer"
+      },
+      "name": {
+        "description": "This is the name of the sample value.",
+        "type": "string"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  }
