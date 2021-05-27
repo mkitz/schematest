@@ -163,7 +163,6 @@
             }
           },
           "required": [
-            "uuid",
             "systemName",
             "systemDescription",
             "systemType",
