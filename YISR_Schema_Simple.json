@@ -1,7 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/v1/yisrschema.json",
-    "type": "object",
     "properties": {
       "items": {
         "description": "Each item or system you intend to register should have a record inside this array.",
