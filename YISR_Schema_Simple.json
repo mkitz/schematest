@@ -166,15 +166,7 @@
                 },
                 "ip": {
                   "description": "If you have an IP that doesn't change(Static), please submit that in the IP field. Omit this field if the IP changes.",
-                  "type": "string",
-                  "oneOf": [
-                    {
-                      "format": "ipv4"
-                    },
-                    {
-                      "format": "ipv6"
-                    }
-                  ]
+                  "type": "string"
                 },
                 "url": {
                   "description": "This should be the website URL, API endpoint/URI, VIP name, or other URL used to access this system.",
