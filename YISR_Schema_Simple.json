@@ -1,138 +1,135 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/v1/yisrschema.json",
+    "type": "object",
     "properties": {
-      "items": {
-        "description": "Each item or system you intend to register should have a record inside this array.",
-        "type": "object",
-        "properties": {
-          "uuid": {
-            "description": "This is a unique identifier for this submission.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "systemName": {
-            "description": "This should be the name of the application, website, system, credentials, etc. Note: this may also be the systemIdentifier for basic entries.",
-            "type": "string"
-          },
-          "systemDescription": {
-            "description": "Provide a general description of this system or the purpose for context.",
-            "type": "string"
-          },
-          "systemType": {
-            "description": "Each item or system you intend to register should have a record inside this array.",
-            "enum": [
-              "Application",
-              "SaaS Application",
-              "Single Host/Device",
-              "Non-Internet Connected Device",
-              "Networking Device",
-              "Credentials",
-              "Container",
-              "Website",
-              "API",
-              "IoT device",
-              "Other"
-            ],
-            "type": "string"
-          },
-          "systemOrg": {
-            "description": "Provide the department or group that this system belongs to or is responsible for support.",
-            "type": "string"
-          },
-          "riskClass": {
-            "description": "Provide the Risk Classification of this system, taking into account data classification, availability requirements, and external obligations. Please see https://cybersecurity.yale.edu/mss/calculator for more information.",
-            "enum": [
-              "Low",
-              "Moderate",
-              "High"
-            ],
-            "type": "string"
-          },
-          "riskTypes": {
-            "type": "array",
-            "items": [
-              {
-                "description": "If your system is defined as High Risk you are required to submit the type of High Risk classes that apply to you.",
-                "enum": [
-                  "HIPAA",
-                  "PII",
-                  "PCI-DSS",
-                  "SSN",
-                  "GBLA",
-                  "Donor Info",
-                  "Usernames w/ PW",
-                  "Banking or Credit Card info",
-                  "DL or Passport numbers",
-                  "Database used for critical & high risk functions",
-                  "Availability <8hrs",
-                  "Animal Research",
-                  "Export Controlled",
-                  "Workstation/System used by a HIPAA covered entity",
-                  "Other"
-                ],
-                "type": "string"
-              }
-            ]
-          },
-          "securityContact": {
-            "description": "The Security Contact should be submitted as either just an Accountable Party (the dept/group responsible for the system and its risk, not the IT Support person), who will want to be contacted in the case of any security incidents, or both an Accountable Party and a Security Contact (delegated), for if the accountable party wants another group or person contacted in the case of a security incident.",
-            "type": "array",
-            "minItems": 1,
-            "maxItems": 2,
-            "items": {
-              "type": "object",
-              "properties": {
-                "scType": {
-                  "description": "Accountable Party= The dept/group responsible for the system and its risk, not the IT Support person, Security Contact (delegated)= If the accountable party wants another group or person contacted in the case of a security incident.",
-                  "enum": [
-                    "Accountable Party",
-                    "Security Contact"
-                  ],
-                  "type": "string"
-                },
-                "scEmail": {
-                  "description": "The Email address of this contact.",
-                  "format": "email",
-                  "type": "string"
-                },
-                "scPhone": {
-                  "description": "The Phone Number of this contact.",
-                  "pattern": "^[+]?[(]?[0-9]{3}[)]?[-\\s.]?[0-9]{3}[-\\s.]?[0-9]{4,6}$",
-                  "type": "string"
-                },
-                "scNetid": {
-                  "description": "The Netid of this contact. If the contact is a department, the dept managers netid.",
-                  "type": "string"
-                },
-                "scDept": {
-                  "description": "The Department or Group of this contact.",
-                  "type": "string"
-                },
-                "scChannel": {
-                  "description": "Please enter how this contact would prefer to be contacted, via ServiceNow tickets, email, or phone.",
-                  "enum": [
-                    "ServiceNow",
-                    "Phone",
-                    "Email"
-                  ],
-                  "type": "string"
-                }
-              },
-              "required": [
-                "scType",
-                "scEmail",
-                "scPhone",
-                "scNetid",
-                "scDept",
-                "scChannel"
-              ]
+      "uuid": {
+          "description": "This is a unique identifier for this submission.",
+          "format": "uuid",
+          "type": "string"
+        },
+        "systemName": {
+          "description": "This should be the name of the application, website, system, credentials, etc. Note: this may also be the systemIdentifier for basic entries.",
+          "type": "string"
+        },
+        "systemDescription": {
+          "description": "Provide a general description of this system or the purpose for context.",
+          "type": "string"
+        },
+        "systemType": {
+          "description": "Each item or system you intend to register should have a record inside this array.",
+          "enum": [
+            "Application",
+            "SaaS Application",
+            "Single Host/Device",
+            "Non-Internet Connected Device",
+            "Networking Device",
+            "Credentials",
+            "Container",
+            "Website",
+            "API",
+            "IoT device",
+            "Other"
+          ],
+          "type": "string"
+        },
+        "systemOrg": {
+          "description": "Provide the department or group that this system belongs to or is responsible for support.",
+          "type": "string"
+        },
+        "riskClass": {
+          "description": "Provide the Risk Classification of this system, taking into account data classification, availability requirements, and external obligations. Please see https://cybersecurity.yale.edu/mss/calculator for more information.",
+          "enum": [
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "type": "string"
+        },
+        "riskTypes": {
+          "type": "array",
+          "items": [
+            {
+              "description": "If your system is defined as High Risk you are required to submit the type of High Risk classes that apply to you.",
+              "enum": [
+                "HIPAA",
+                "PII",
+                "PCI-DSS",
+                "SSN",
+                "GBLA",
+                "Donor Info",
+                "Usernames w/ PW",
+                "Banking or Credit Card info",
+                "DL or Passport numbers",
+                "Database used for critical & high risk functions",
+                "Availability <8hrs",
+                "Animal Research",
+                "Export Controlled",
+                "Workstation/System used by a HIPAA covered entity",
+                "Other"
+              ],
+              "type": "string"
             }
-          },
-          "attributes": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
+          ]
+        },
+      "securityContact": {
+          "description": "The Security Contact should be submitted as either just an Accountable Party (the dept/group responsible for the system and its risk, not the IT Support person), who will want to be contacted in the case of any security incidents, or both an Accountable Party and a Security Contact (delegated), for if the accountable party wants another group or person contacted in the case of a security incident.",
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scType": {
+                    "description": "Functional Contact= The dept/group responsible for the system and its risk, not the IT Support person, Technical Contact (delegated)= If the accountable party wants another group or person contacted in the case of a security incident.",
+                    "enum": [
+                      "Functional Contact",
+                      "Technical Contact"
+                    ],
+                    "type": "string"
+                  },
+                  "scEmail": {
+                    "description": "The Email address of this contact.",
+                    "format": "email",
+                    "type": "string"
+                  },
+                  "scPhone": {
+                    "description": "The Phone Number of this contact.",
+                    "pattern": "^[+]?[(]?[0-9]{3}[)]?[-\\s.]?[0-9]{3}[-\\s.]?[0-9]{4,6}$",
+                    "type": "string"
+                  },
+                  "scNetid": {
+                    "description": "The Netid of this contact. If the contact is a department, the dept managers netid.",
+                    "type": "string"
+                  },
+                  "scDept": {
+                    "description": "The Department or Group of this contact.",
+                    "type": "string"
+                  },
+                  "scChannel": {
+                    "description": "Please enter how this contact would prefer to be contacted, via ServiceNow tickets, email, or phone.",
+                    "enum": [
+                      "ServiceNow",
+                      "Phone",
+                      "Email"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "scType",
+                  "scEmail",
+                  "scPhone",
+                  "scNetid",
+                  "scDept",
+                  "scChannel"
+                ]
+              }
+      },
+      "attributes": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+          {
               "type": "object",
               "properties": {
                 "systemIdentifier": {
@@ -203,23 +200,22 @@
               "required": [
                 "systemIdentifier"
               ]
-            }
-          },
-          "submitterNetid": {
-            "description": "Add the NETID of the user who is submitting this registration, even if they are not linked to the record. If its via service account, you may enter the service account name here.",
-            "type": "string"
           }
-        },
-        "required": [
-          "systemName",
-          "systemDescription",
-          "systemType",
-          "systemOrg",
-          "riskClass",
-          "securityContact",
-          "attributes",
-          "submitterNetid"
         ]
+      },
+      "submitterNetid": {
+          "description": "Add the NETID of the user who is submitting this registration, even if they are not linked to the record. If its via service account, you may enter the service account name here.",
+          "type": "string"
       }
-    }
+    },
+    "required": [
+      "systemName",
+      "systemDescription",
+      "systemType",
+      "systemOrg",
+      "riskClass",
+      "securityContact",
+      "attributes",
+      "submitterNetid"
+    ]
   }
