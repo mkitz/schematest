@@ -207,7 +207,6 @@
       "systemOrg",
       "riskClass",
       "securityContact",
-      "attributes",
-      "submitterNetid"
+      "attributes"
     ]
   }
