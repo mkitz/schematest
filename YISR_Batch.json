@@ -1,0 +1,272 @@
+{
+                    "records": {
+                        "errored": [],
+                        "successful": [
+                            {
+                                "_links": {
+                                    "collection": "/v1/registry",
+                                    "self": {
+                                        "href": "/v1/registry/0ab3214c-6ed1-4f6a-b99d-decb3904bfa2"
+                                    }
+                                }
+                                "attributes": [
+                                    {
+                                        "MAC": "00-12-5D-FD-38-34",
+                                        "componentType": "Server",
+                                        "ip": "172.168.1.1",
+                                        "ipType": "static",
+                                        "location": "West Campus DC",
+                                        "manufacturer": "",
+                                        "model": "",
+                                        "os": "Linux",
+                                        "systemIdentifier": "vm-iiqprdapp-01.yale.edu",
+                                        "url": "iiqprdapp.internal.yale.edu"
+                                    }
+                                ],
+                                "created_by": "mw629",
+                                "date_created": "2021-06-24T14:09:21.551283",
+                                "date_updated": "2021-06-25T19:18:23.978304",
+                                "id": "0ab3214c-6ed1-4f6a-b99d-decb3904bfa2",
+                                "riskClass": "High",
+                                "riskTypes": [
+                                    "SSN",
+                                    "HIPAA"
+                                ],
+                                "securityContact": [
+                                    {
+                                        "scChannel": "ServiceNow",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "test@yale.edu",
+                                        "scNetid": "tst123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Functional Contact"
+                                    },
+                                    {
+                                        "scChannel": "Phone",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "sc@yale.edu",
+                                        "scNetid": "sc123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Technical Contact"
+                                    }
+                                ],
+                                "submitterNetid": "mw629",
+                                "systemDescription": "This is used for idsystem management",
+                                "systemName": "IAM",
+                                "systemOrg": "Information Security",
+                                "systemType": "Application",
+                                "updated_by": "mw629"
+                            },
+                            {
+                                "_links": {
+                                    "collection": "/v1/registry",
+                                    "self": {
+                                        "href": "/v1/registry/22e02b7e-ed0e-4446-a6a0-22e6b6ddc902"
+                                    }
+                                },
+                                "associatedNetids": [
+                                    "tst123",
+                                    "sc123",
+                                    "mw629"
+                                ],
+                                "attributes": [
+                                    {
+                                        "MAC": "00-12-5D-FD-38-35",
+                                        "componentType": "Server",
+                                        "ip": "172.168.1.2",
+                                        "ipType": "static",
+                                        "location": "Azure East 2",
+                                        "manufacturer": "",
+                                        "model": "",
+                                        "os": "Linux",
+                                        "systemIdentifier": "vm-iiqprdapp-02.yale.edu",
+                                        "url": "iiqprdapp.internal.yale.edu"
+                                    }
+                                ],
+                                "created_by": "mw629",
+                                "date_created": "2021-06-24T14:09:21.551283",
+                                "date_updated": "2021-06-25T19:18:23.994577",
+                                "id": "22e02b7e-ed0e-4446-a6a0-22e6b6ddc902",
+                                "json": {
+                                    "attributes": [
+                                        {
+                                            "MAC": "00-12-5D-FD-38-35",
+                                            "componentType": "Server",
+                                            "ip": "172.168.1.2",
+                                            "ipType": "static",
+                                            "location": "Azure East 2",
+                                            "manufacturer": "",
+                                            "model": "",
+                                            "os": "Linux",
+                                            "systemIdentifier": "vm-iiqprdapp-02.yale.edu",
+                                            "url": "iiqprdapp.internal.yale.edu"
+                                        }
+                                    ],
+                                    "id": "22e02b7e-ed0e-4446-a6a0-22e6b6ddc902",
+                                    "riskClass": "High",
+                                    "riskTypes": [
+                                        "SSN",
+                                        "HIPAA"
+                                    ],
+                                    "securityContact": [
+                                        {
+                                            "scChannel": "ServiceNow",
+                                            "scDept": "Info Sec",
+                                            "scEmail": "test@yale.edu",
+                                            "scNetid": "tst123",
+                                            "scPhone": "203-432-0000",
+                                            "scType": "Functional Contact"
+                                        },
+                                        {
+                                            "scChannel": "Phone",
+                                            "scDept": "Info Sec",
+                                            "scEmail": "sc@yale.edu",
+                                            "scNetid": "sc123",
+                                            "scPhone": "203-432-0000",
+                                            "scType": "Technical Contact"
+                                        }
+                                    ],
+                                    "submitterNetid": "mw629",
+                                    "systemDescription": "This is used for idsystem management",
+                                    "systemName": "IAM",
+                                    "systemOrg": "Information Security",
+                                    "systemType": "Application"
+                                },
+                                "riskClass": "High",
+                                "riskTypes": [
+                                    "SSN",
+                                    "HIPAA"
+                                ],
+                                "securityContact": [
+                                    {
+                                        "scChannel": "ServiceNow",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "test@yale.edu",
+                                        "scNetid": "tst123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Functional Contact"
+                                    },
+                                    {
+                                        "scChannel": "Phone",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "sc@yale.edu",
+                                        "scNetid": "sc123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Technical Contact"
+                                    }
+                                ],
+                                "submitterNetid": "mw629",
+                                "systemDescription": "This is used for idsystem management",
+                                "systemName": "IAM",
+                                "systemOrg": "Information Security",
+                                "systemType": "Application",
+                                "updated_by": "mw629"
+                            },
+                            {
+                                "_links": {
+                                    "collection": "/v1/registry",
+                                    "self": {
+                                        "href": "/v1/registry/8422c191-368a-481c-bbb5-0f7740b15916"
+                                    }
+                                },
+                                "associatedNetids": [
+                                    "tst123",
+                                    "sc123",
+                                    "mw629"
+                                ],
+                                "attributes": [
+                                    {
+                                        "MAC": "00-12-5D-FD-38-36",
+                                        "componentType": "Server",
+                                        "ip": "172.168.1.3",
+                                        "ipType": "static",
+                                        "location": "Norwalk",
+                                        "manufacturer": "",
+                                        "model": "",
+                                        "os": "Linux",
+                                        "systemIdentifier": "vm-iiqprdapp-03.yale.edu",
+                                        "url": "iiqprdapp.internal.yale.edu"
+                                    }
+                                ],
+                                "created_by": "mw629",
+                                "date_created": "2021-06-24T14:09:21.551283",
+                                "date_updated": "2021-06-25T19:18:24.009407",
+                                "id": "8422c191-368a-481c-bbb5-0f7740b15916",
+                                "json": {
+                                    "attributes": [
+                                        {
+                                            "MAC": "00-12-5D-FD-38-36",
+                                            "componentType": "Server",
+                                            "ip": "172.168.1.3",
+                                            "ipType": "static",
+                                            "location": "Norwalk",
+                                            "manufacturer": "",
+                                            "model": "",
+                                            "os": "Linux",
+                                            "systemIdentifier": "vm-iiqprdapp-03.yale.edu",
+                                            "url": "iiqprdapp.internal.yale.edu"
+                                        }
+                                    ],
+                                    "id": "8422c191-368a-481c-bbb5-0f7740b15916",
+                                    "riskClass": "High",
+                                    "riskTypes": [
+                                        "SSN",
+                                        "HIPAA"
+                                    ],
+                                    "securityContact": [
+                                        {
+                                            "scChannel": "ServiceNow",
+                                            "scDept": "Info Sec",
+                                            "scEmail": "test@yale.edu",
+                                            "scNetid": "tst123",
+                                            "scPhone": "203-432-0000",
+                                            "scType": "Functional Contact"
+                                        },
+                                        {
+                                            "scChannel": "Phone",
+                                            "scDept": "Info Sec",
+                                            "scEmail": "sc@yale.edu",
+                                            "scNetid": "sc123",
+                                            "scPhone": "203-432-0000",
+                                            "scType": "Technical Contact"
+                                        }
+                                    ],
+                                    "submitterNetid": "mw629",
+                                    "systemDescription": "This is used for idsystem management",
+                                    "systemName": "IAM",
+                                    "systemOrg": "Information Security",
+                                    "systemType": "Application"
+                                },
+                                "riskClass": "High",
+                                "riskTypes": [
+                                    "SSN",
+                                    "HIPAA"
+                                ],
+                                "securityContact": [
+                                    {
+                                        "scChannel": "ServiceNow",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "test@yale.edu",
+                                        "scNetid": "tst123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Functional Contact"
+                                    },
+                                    {
+                                        "scChannel": "Phone",
+                                        "scDept": "Info Sec",
+                                        "scEmail": "sc@yale.edu",
+                                        "scNetid": "sc123",
+                                        "scPhone": "203-432-0000",
+                                        "scType": "Technical Contact"
+                                    }
+                                ],
+                                "submitterNetid": "mw629",
+                                "systemDescription": "This is used for idsystem management",
+                                "systemName": "IAM",
+                                "systemOrg": "Information Security",
+                                "systemType": "Application",
+                                "updated_by": "mw629"
+                            }
+                        ]
+                    }
+      }
