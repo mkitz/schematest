@@ -194,10 +194,6 @@
               ]
           }
         ]
-      },
-      "submitterNetid": {
-          "description": "Add the NETID of the user who is submitting this registration, even if they are not linked to the record. If its via service account, you may enter the service account name here.",
-          "type": "string"
       }
     },
     "required": [
