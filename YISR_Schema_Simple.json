@@ -65,7 +65,9 @@
                 "Animal Research",
                 "Export Controlled",
                 "Workstation/System used by a HIPAA covered entity",
-                "Other"
+                "Other",
+                "FERPA",
+                "Other - Moderate Risk"
               ],
               "type": "string"
             }
