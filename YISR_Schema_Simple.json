@@ -20,6 +20,7 @@
           "enum": [
             "Application",
             "SaaS Application",
+            "Multi Host/Device",
             "Single Host/Device",
             "Non-Internet Connected Device",
             "Networking Device",
@@ -141,14 +142,15 @@
                 "componentType": {
                   "description": "For Applications and systems with multiple item types. This should be the specific type of this item, server, credentials, computer, etc. If this is a single registration for one device or system, you may omit this field.",
                   "enum": [
-                    "Server",
-                    "Container",
-                    "Workstation",
-                    "Website",
+                    "Multi Host/Device",
+                    "Single Host/Device",
+                    "Non-Internet Connected Device",
+                    "Networking Device",
                     "Credentials",
+                    "Container",
+                    "Website",
                     "API",
-                    "Router",
-                    "Switch",
+                    "IoT device",
                     "Other"
                   ],
                   "type": "string"
