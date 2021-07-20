@@ -190,10 +190,7 @@
                   "description": "The Operating System of this device, i.e. Windows 10, Windows XP, Linux Redhat, etc.",
                   "type": "string"
                 }
-              },
-              "required": [
-                "systemIdentifier"
-              ]
+              }
           }
         ]
       }
