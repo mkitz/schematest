@@ -160,7 +160,7 @@
               },
               "MAC": {
                 "description": "The MAC address of this device, if multiple are used to connect this system to the network, please add additional items into the attributes array, one for each MAC.",
-                "pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$",
+                "pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})|([0-9A-Fa-f]{12})$",
                 "type": "string"
               },
               "ipType": {
